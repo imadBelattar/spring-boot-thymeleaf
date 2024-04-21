@@ -20,4 +20,8 @@ public class DemandeService {
     public Demande findById(Long id) {
         return demandeRepository.findById(id).orElse(null);
     }
+
+    public void deleteDemande(Long id) {
+        demandeRepository.deleteById(id);
+    }
 }
